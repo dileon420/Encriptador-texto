@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header></header>
+    <main class="encriptador">
+        <img src="imagenes/Logo.png" alt="imagen del logo" class="encriptador__logo">
+        <section class="encriptador__contenido">
+            <input type="text" placeholder="Ingrese el texto aqui" class="encriptador__contenido__input"
+                id="textoAEncriptar">
+            <img src="imagenes/Advertencia.png" alt="imagen de la advertencia"
+                class="encriptador__contenido__advertencia">
+            <div class="encriptador__contenido__botones">
+                <input type="submit" value="Encriptar" class="boton__encriptar" onclick="encriptar();"
+                    id="botonEncriptar">
+                <input type="submit" value="Desencriptar" class="boton__desencriptar" onclick="desencriptar();"
+                    id="botonDesencriptar" disabled>
+            </div>
+        </section>
+        <section class="encriptador__muneco">
+            <textarea type="text" class="input__salida" id="textoEncriptado"></textarea>
+            <img src="imagenes/Muneco.png" alt="imagen de un muneco" class="muneco">
+            <div class="muneco__parrafo">
+                <p class="muneco__parrafo__primero" id="parrafoPrimero">Ningún mensaje fue encontrado</p>
+                <p class="muneco__parrafo__segundo" id="parrafoSegundo">Ingresa el texto que deseas encriptar o
+                    desencriptar.</p>
+            </div>
+            <input type="submit" value="Copiar" class="boton__copiar" id="botonCopiar" onclick="copiar();">
+        </section>
+    </main>
+    <footer></footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
